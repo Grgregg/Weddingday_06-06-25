@@ -10,7 +10,7 @@ body, html {
   }
   @font-face {
     font-family: 'LemonTuesday';
-    src: url('font/LemonTuesday.woff') format('opentype');
+    src: url('../font/LemonTuesday.woff') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
