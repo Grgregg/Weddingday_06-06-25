@@ -10,7 +10,7 @@ body, html {
   }
   @font-face {
     font-family: 'LemonTuesday';
-    src: url('../font/Lemon Tuesday.otf') format('opentype');
+    src: url('https://github.com/Grgregg/Weddingday_06-06-25/blob/main/font/Lemon%20Tuesday.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
