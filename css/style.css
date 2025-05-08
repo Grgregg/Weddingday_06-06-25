@@ -1,0 +1,464 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    background: #f1ece6;
+  }
+  h1{
+    font-size: 100px;
+  }
+  @font-face {
+    font-family: 'LemonTuesday';
+    src: url('../fonts/Lemon Tuesday.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .section {
+    
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+  }
+.aler{
+    color: #C2453D;
+}
+  .title {
+    font-family: 'LemonTuesday', sans-serif;
+
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .child-block {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    background-image: url('../images/8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .child-block img {
+    max-width: 80%;
+    max-height: 110%;
+    object-fit: contain;
+    border-radius: 8px;
+
+  }
+  .guest-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+
+  }
+  
+  .guest-block {
+    width: 100%;
+    max-width: 800px;
+    background-image: url('../images/11.png'); /* Твой фон */
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #1E2440;
+  }
+  
+  .guest-block::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    z-index: 0;
+  }
+  
+  .guest-block h2,
+  .guest-block p,
+  .guest-block img {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .guest-block h2 {
+    font-family: 'LemonTuesday', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .guest-block p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .guest-block img {
+    max-width: 70%;
+  }
+  
+
+
+
+
+
+  /* Общие стили для горизонтального блока */
+.horizontal_block {
+  position: relative;
+  top: -100px;
+  display: flex;
+  justify-content: center; /* Блоки располагаются на разных концах */
+  width: 100%; /* Заполняем весь родительский контейнер */
+  max-width: 1200px; /* Ограничиваем максимальную ширину блока */
+  margin: 0 auto; /* Центрируем горизонтальный блок */
+  gap: 20px; /* Расстояние между дочерними блоками */
+  padding: 20px; /* Отступы внутри горизонтального блока */
+  background-image: url('../images/12.png'); /* Фоновое изображение */
+  background-size: cover; /* Покрытие фоном */
+  background-position: center; /* Центрирование фона */
+  height: 2000px;
+}
+
+/* Стиль для первого дочернего блока */
+.block_1 {
+  position: absolute;
+  flex: 1; /* Занимает одинаковую ширину с другими блоками */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  height: 20%;
+  left: 15%;
+}
+.block_1 h1{
+  font-size: 40px;
+}
+.block_1 p{
+  font-size: 20px;
+}
+/* Стиль для второго дочернего блока (с картинкой слева и текстом справа) */
+.block_2 {
+  position: absolute;
+  flex: 1; /* Занимает одинаковую ширину с другими блоками */
+  display: flex;
+  justify-content: flex-start; /* Размещение элементов по горизонтали */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  gap: 20px; /* Расстояние между картинкой и текстом */
+  padding: 10px;
+  height: 20%;
+  left: 55%;
+}
+
+/* Картинка в блоке 2 */
+.block_2 img {
+  width: 50px; /* Устанавливаем ширину картинки */
+  height: auto; /* Автоматическая высота, пропорционально ширине */
+  margin-left: 10px; /* Отступ справа от картинки */
+  margin-bottom: 100px;
+}
+
+
+
+
+
+/* Стиль для первого дочернего блока */
+.block_3 {
+  position: absolute;
+  flex: 1; /* Занимает одинаковую ширину с другими блоками */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  height: 60%;
+  left: 15%;
+}
+.block_3 h1{
+  font-size: 40px;
+}
+.block_3 p{
+  font-size: 20px;
+}
+/* Стиль для второго дочернего блока (с картинкой слева и текстом справа) */
+.block_4 {
+  position: absolute;
+  flex: 1; /* Занимает одинаковую ширину с другими блоками */
+  display: flex;
+  justify-content: flex-start; /* Размещение элементов по горизонтали */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  gap: 20px; /* Расстояние между картинкой и текстом */
+  padding: 10px;
+  height: 60%;
+  left: 56%;
+}
+
+/* Картинка в блоке 2 */
+.block_4 img {
+  width: 50px; /* Устанавливаем ширину картинки */
+  height: auto; /* Автоматическая высота, пропорционально ширине */
+  margin-left: 10px; /* Отступ справа от картинки */
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+/* Стиль для первого дочернего блока */
+.block_5 {
+  position: absolute;
+  flex: 1; /* Занимает одинаковую ширину с другими блоками */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  height: 100%;
+  left: 15%;
+}
+.block_5 h1{
+  font-size: 40px;
+}
+.block_5 p{
+  font-size: 20px;
+}
+/* Стиль для второго дочернего блока (с картинкой слева и текстом справа) */
+.block_6 {
+  position: absolute;
+  flex: 1; /* Занимает одинаковую ширину с другими блоками */
+  display: flex;
+  justify-content: flex-start; /* Размещение элементов по горизонтали */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  gap: 20px; /* Расстояние между картинкой и текстом */
+  padding: 10px;
+  height: 100%;
+  left: 60%;
+}
+
+/* Картинка в блоке 2 */
+.block_6 img {
+  width: 50px; /* Устанавливаем ширину картинки */
+  height: auto; /* Автоматическая высота, пропорционально ширине */
+  margin-left: 10px; /* Отступ справа от картинки */
+  margin-bottom: 100px;
+}
+
+
+
+
+/* Стиль для первого дочернего блока */
+.block_7 {
+  position: absolute;
+  flex: 1; /* Занимает одинаковую ширину с другими блоками */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  height: 145%;
+  left: 15%;
+}
+.block_7 h1{
+  font-size: 40px;
+}
+.block_7 p{
+  font-size: 20px;
+}
+
+
+/* Стиль для первого дочернего блока */
+.block_8 {
+  position: absolute;
+  flex: 1; /* Занимает одинаковую ширину с другими блоками */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  height: 190%;
+  left: 30%;
+}
+.block_8 h1{
+  font-size: 40px;
+}
+.block_8 p{
+  font-size: 20px;
+}
+
+
+
+/* Текст в блоке 2 (название и описание) */
+.text {
+  display: flex;
+  flex-direction: column; /* Размещение текста вертикально */
+  justify-content: center; /* Выравнивание по вертикали */
+}
+.time{
+  font-family: sans-serif;
+  font-size: 34px;
+  font-weight: 100;
+}
+/* Время, заголовок и описание */
+.time, .title, .description {
+  margin: 0; /* Убираем стандартные отступы */
+  text-align: left;
+}
+.title2 {
+  color: #C2453D;
+  font-size: 40px; /* Размер шрифта для заголовков */
+  font-weight: bold; /* Заголовок жирный */
+  font-family: 'LemonTuesday', sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.description {
+  width: 300px;
+  font-size: 24px;
+  color: #666; /* Цвет для описания */
+}
+
+/* Для лучшего отображения адреса, добавим немного отступов между строками */
+.description br {
+  margin-bottom: 5px; /* Добавим отступ после каждого переноса строки */
+}
+
+
+
+
+
+
+.centered_block {
+  max-width: 800px; /* Ограничиваем ширину */
+  margin: 40px auto; /* Центрируем блок по горизонтали */
+  text-align: center; /* Центрируем текст */
+  background-image: url('../images/15.png'); /* Фоновое изображение */
+  background-size: cover;
+  background-position: center;
+
+  padding: 160px 40px; /* Внутренние отступы */
+  border-radius: 20px; /* Закругление углов, по желанию */
+}
+
+.centered_block .t {
+  position: relative;
+  font-family: 'LemonTuesday', sans-serif;
+  font-size: 48px;
+  color: #C2453D;
+  margin-bottom: 10px;
+  top: 230px;
+}
+
+.centered_block .des {
+  position: relative;
+  font-size: 24px;
+  color: #1E2440;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  top: 230px;
+}
+
+.centered_block .centered_image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  position: relative;
+  top: 230px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto; /* Центрируем изображение */
+}
+
+
+.centered_block_2 {
+  max-width: 800px; /* Ограничиваем ширину */
+  margin: 40px auto; /* Центрируем блок по горизонтали */
+  text-align: center; /* Центрируем текст */
+  background-image: url('../images/17.png'); /* Фоновое изображение */
+  background-size: cover;
+  background-position: center;
+
+  padding: 160px 40px; /* Внутренние отступы */
+  border-radius: 20px; /* Закругление углов, по желанию */
+}
+
+.centered_block_2 .t {
+  position: relative;
+  font-family: 'LemonTuesday', sans-serif;
+  font-size: 48px;
+  color: #C2453D;
+  margin-bottom: 10px;
+  top: 110px;
+}
+
+.centered_block_2 .des {
+  position: relative;
+  font-size: 30px;
+  color: #1E2440;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  top: 110px;
+}
+
+
+.centered_block_3 {
+  max-width: 800px; /* Ограничиваем ширину */
+  margin: 40px auto; /* Центрируем блок по горизонтали */
+  text-align: center; /* Центрируем текст */
+  background-image: url('../images/18.png'); /* Фоновое изображение */
+  background-size: cover;
+  background-position: center;
+  padding: 160px 40px; /* Внутренние отступы */
+  border-radius: 20px; /* Закругление углов, по желанию */
+  height: 200px;
+}
+
+.centered_block_3 .t {
+  position: relative;
+  font-family: 'LemonTuesday', sans-serif;
+  font-size: 48px;
+  color: #C2453D;
+  margin-bottom: 10px;
+  bottom: 400px;
+}
+
+.centered_block_3 .des {
+  position: relative;
+  font-size: 30px;
+  color: #1E2440;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  bottom: 400px;
+}
+.d {
+  position: relative;
+  font-size: 30px;
+  left: 43%;
+  color: #1E2440;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  top: 100px;
+}
+.centered_block_3 .centered_image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  position: relative;
+  bottom: 200px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto; /* Центрируем изображение */
+}
